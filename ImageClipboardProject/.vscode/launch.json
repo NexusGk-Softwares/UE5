@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Unreal Engine",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "YourUE5Path/Engine/Binaries/Win64/UE4Editor.exe",
+            "args": [
+                "YourProjectPath/YourProject.uproject"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "description": "enable pretty printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

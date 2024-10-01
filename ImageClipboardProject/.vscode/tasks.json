@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "YourUE5Path/Engine/Binaries/Win64/UE4Editor.exe",
+            "args": [
+                "YourProjectPath/YourProject.uproject",
+                "-run=Build",
+                "-TargetPlatform=Win64"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
